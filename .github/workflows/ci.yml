@@ -18,5 +18,11 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-      - name: Run tests with pytest
-        run: pytest 
+      - name: Run Test test_responses.py
+        run: pytest tests/test_responses.py
+      - name: Run Test test_metadata.py
+        run: pytest tests/test_metadata.py
+      - name: Run Test test_post_metadata_query.py
+        run: pytest tests/test_post_metadata_query.py
+      - name: Run Test test_signatures.py
+        run: pytest tests/test_signatures.py
