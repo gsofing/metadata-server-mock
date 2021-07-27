@@ -19,7 +19,7 @@ for s in allMetadatas['subjects']:
 @pytest.mark.skip
 @pytest.mark.parametrize("subject,property", subjects_and_properties)
 def testPropertySignature(subject, property):
-	v      = property['value']
+	v = property['value']
 	for signature in property['signatures']:
 		pubkey = signature['publicKey'].encode("utf-8")
 		sig    = signature['signature'].encode("utf-8")
